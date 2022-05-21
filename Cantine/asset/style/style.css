@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box; 
+    font-size: 1.3rem;
+    font-weight: 400;
+    
+}
+body{
+    padding-top: 2.5%;
+    padding-left: 10%;
+    min-width: 100vh;
+    background: #222;
+}
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top:1% ;
+    max-width: 1600px;
+}
+.container .card{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: 15px;
+    overflow: hidden;
+}
+.container .card .imgBox,
+.container .card .contentBx{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.container .card .imgBox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.container .card .contentBx::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    transition: transform 0.5s ease-in-out;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: changement 7s linear infinite;
+}
+@keyframes changement{
+    25%{
+        transform: scaleX(0);
+        transform-origin: left;
+    }
+    50%{
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+    75%{
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+    100%{
+        transform: scaleX(0);
+        transform-origin: left;
+    }
+}
+
+.container .card .contentBx .content{
+    position: relative;
+    padding: 30px;
+    z-index: 1;
+    transform: translateX(-500px);
+    animation: changement2 7s linear infinite;
+}
+@keyframes changement2{
+    25%{
+        transform: translateX(-500px);
+        
+    }
+    50%{
+        transform: translateX(0px);
+    }
+    75%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(-500px);
+    }
+}
+
+
+/* .container .card2 .contentBx .content,
+.container .card4 .contentBx .content,
+.container .card6 .contentBx .content
+{
+    animation-delay: 3.5s;
+}
+.container .card2 .contentBx::before, 
+.container .card4 .contentBx::before,
+.container .card6 .contentBx::before
+{
+    animation-delay: 3.5s;
+} */
+
+
+h3{
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.card{
+    display: flex;
+    width: 22%;
+}
+.listeregime{
+    margin-top: 5%;
+}
+
+.gluttenNO{
+    text-decoration: line-through;
+}
+.HalalNO{
+    text-decoration: line-through;
+}
+.KasherNO{
+    text-decoration: line-through;
+}
+.vegetarienNO{
+    text-decoration: line-through;
+}
+.vegetalienNO{
+    text-decoration: line-through;
+}
+/* hd vertical */
+@media (max-width:1080px) {
+    .container{
+        max-width: 1060px;
+    }
+    body{
+        padding-top: 10%;
+        padding-left: 1%;
+    }
+}
+/* Uhd vertical */
+@media (min-height: 3840px) {
+    *{
+        font-size: 1.85rem;
+    }
+    body{
+        padding-top: 20%;
+        padding-left: 0%;
+    }
+    .container{
+        max-width: 2160px;
+    }
+    .container .card{
+        width: 900px;
+        height: 900px;
+    }
+    .container .card .contentBx .content{
+        animation: changement3 7s linear infinite;
+        transform: translateX(-1000px);
+    }
+}
+/* Uhd horizontal */
+@media (min-width: 3840px){
+    *{
+        font-size: 1.85rem;
+    }
+    .container{
+        max-width: 3000px;
+    }
+    .container .card{
+        width: 900px;
+        height: 900px;
+    }
+    .container .card .contentBx .content{
+        animation: changement3 7s linear infinite;
+        transform: translateX(-1000px);
+    }
+
+}
+@keyframes changement3{
+    25%{
+        transform: translateX(-1000px);
+        
+    }
+    50%{
+        transform: translateX(0px);
+    }
+    75%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(-1000px);
+    }
+}
