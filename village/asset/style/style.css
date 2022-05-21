@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+body{
+    margin: 0%;
+    font-family: open sans;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+}
+
+.container{
+    width: 90%;
+    height: 80%;
+    margin: 5%;
+    color: black;
+
+}
+.grid3_5{
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0%;
+    font-size: 1.15rem;
+    width: 100%;
+    height: 100%;
+}
+.sit1{
+    grid-column: 3;
+    grid-row: 1;
+    width: 40%;
+    padding-left: 30%;
+}
+.sit2{
+    grid-column: 1;
+    grid-row: 2;
+    width: 55%;
+    padding-left: 25%;
+}
+.sit3{
+    grid-column: 3;
+    grid-row: 3;
+    width: 55%;
+    padding-left: 50%;
+}
+.sit4{
+    grid-column: 1;
+    grid-row: 4;
+    width: 70%;
+    padding-left: 25%;
+}
+
+.titre{
+    display: flex;
+}
+
+
+.animation{
+    position: absolute;
+    padding-left: 25%;
+    z-index: -1;
+    
+    width: 50%;
+}
+
+
+.rue__iso{
+    position: absolute;
+    margin-top: -4%;
+    width: 42%;
+    padding-left: 28%;
+    z-index: -10;
+
+}
+.voiture__avant{
+    width: 6%;
+    margin-top: 7%;
+    margin-left: 60%;
+       animation: trajet 15s linear infinite;
+}
+@keyframes trajet{
+    0%{
+        margin-top: 7%;
+        margin-left: 60%;
+        transform: rotatey(-180deg);
+        opacity: 0;
+    }
+    15% {
+        margin-top: 23%;
+        margin-left: 33%;
+        transform: rotatey(-180deg);
+        opacity: 1;
+    }
+    15.5% {
+        margin-top: 23%;
+        margin-left: 33%;
+        transform: rotatey(0deg);
+    }
+    30% {
+        margin-top: 34%;
+        margin-left: 50.5%;
+        transform: rotatey(0deg);
+    }
+    30.5% {
+        margin-top: 34%;
+        margin-left: 50.5%;
+        transform: rotatey(-180deg);
+    }
+
+    49% {
+        margin-top: 52.5%;
+        margin-left: 19%;
+        transform: rotatey(-180deg);
+    }
+    49.5% {
+        margin-top: 52.5%;
+        margin-left: 19%;
+        transform: rotatey(0deg);
+    }
+    70% {
+        margin-top: 75%;
+        margin-left: 58%;
+        transform: rotatey(0deg);
+    }
+    70.5% {
+        margin-top: 75%;
+        margin-left: 58%;
+        transform: rotatey(-180deg);
+    }
+    80% {
+        margin-top: 87%;
+        margin-left: 39%;
+        transform: rotatey(-180deg);
+    }
+    80.5% {
+        margin-top: 87%;
+        margin-left: 39%;
+        transform: rotatey(0deg);
+        opacity: 1;
+    }
+
+    95% {
+        opacity: 0;
+        margin-top: 99%;
+        margin-left: 60%;
+        ;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.voiture__avant__2{
+    width: 6%;
+    margin-top: 7%;
+    opacity: 0;
+    margin-left: 60%;
+    animation: trajet 15s linear infinite;
+    animation-delay: 3700ms;
+}
+.voiture__avant__3{
+    width: 6%;
+    margin-top: 7%;
+    opacity: 0;
+    margin-left: 60%;
+    animation: trajet 15s linear infinite;
+    animation-delay: 9500ms;
+}
+
+.voiture__arriere{
+    width: 6%;
+    margin-top: 97%;
+    margin-left: 63%;
+    transform: rotatey(-180deg);
+    opacity: 0;
+    animation: trajet2 15s linear infinite;
+    animation-delay: 2000ms;
+}
+.voiture__arriere__2{
+    width: 6%;
+    margin-top: 97%;
+    margin-left: 63%;
+    transform: rotatey(-180deg);
+    opacity: 0;
+    animation: trajet2 15s linear infinite;
+    animation-delay: 7500ms;
+}
+.voiture__arriere__3{
+    width: 6%;
+    margin-top: 97%;
+    margin-left: 63%;
+    transform: rotatey(-180deg);
+    opacity: 0;
+    animation: trajet2 15s linear infinite;
+    animation-delay: 11000ms;
+}
+@keyframes trajet2{
+    0%{
+    margin-top: 97%;
+    margin-left: 63%;
+    opacity: 0;
+    }
+    10%{
+    margin-top: 87%;
+    margin-left: 45%;
+    opacity: 1;
+    transform: rotatey(-180deg);
+    }
+    10.5%{
+    margin-top: 87%;
+    margin-left: 45%;
+    opacity: 1;
+    transform: rotatey(0deg);
+    }
+    20%{
+    margin-top: 76%;
+    margin-left: 63%;
+    transform: rotatey(0deg);
+    }
+    20.5%{
+    margin-top: 76%;
+    margin-left: 63%;
+    transform: rotatey(-180deg);
+        }
+    41%{
+    margin-top: 53%;
+    margin-left: 25%;
+    transform: rotatey(-180deg);
+    }
+    41.5%{
+        margin-top: 53%;
+        margin-left: 25%;
+        transform: rotatey(0deg);
+        }
+    60%{
+        margin-top: 35%;
+        margin-left: 55.5%;
+        transform: rotatey(0);
+    }
+    60.5%{
+        margin-top: 35%;
+        margin-left: 55.5%;
+        transform: rotatey(-180deg);
+    }
+    75% {
+        margin-top: 23%;
+        margin-left: 37%;
+        transform: rotatey(-180deg);
+    }
+    75.5% {
+        margin-top: 23%;
+        margin-left: 37%;
+        transform: rotatey(0deg);
+        opacity: 1;
+    }
+    90%{
+        margin-top: 7%;
+        margin-left: 64%;
+        opacity: 0;
+        transform: rotatey(0deg);
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+
+
+@media (max-width:1080px) {
+    body{
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+    }
+    .container{
+        height: 100%;
+        width: 100%;
+
+    }
+    .groupanim{
+        height: 100vh;
+        position: absolute;
+        z-index: -1;
+        padding-top:80% ;
+        padding-left:2% ;
+        margin-top: 0%;
+        margin-left: 0%;
+        /* border: 1px solid blue; */
+        width: 1000px;
+        height: 1800px;
+        transform: scale(1.9);
+
+    }
+    .sit1{
+        grid-column: 3;
+        grid-row: 1;
+        width: 80%;
+        padding:10%;
+        padding-top:40%;
+    }
+    .sit2{
+        grid-column: 1;
+        grid-row: 1;
+        width: 60%;
+        padding-left: 2%;
+        padding-top: 70%;
+    }
+    .sit3{
+        grid-column: 3;
+        grid-row: 2;
+        width: 40%;
+        padding-left: 50%;
+        padding-top: 0%;
+    }
+    .sit4{
+        grid-column: 1;
+        grid-row: 3;
+        width: 70%;
+        padding-left: 20%;
+        padding-top: 60%;
+    }
+
+    .grid3_5{
+        /* border: 1px solid red; */
+        display: grid;
+        grid-template-columns: 3fr 1fr 3fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 0%;
+        font-size: 1.15rem;
+        width: 90%;
+        height: 100%;
+    }
+
+
+}
+@media (min-height: 3840px) {
+    
+    body {
+        width: 2160px;
+        height: 3840px;
+        overflow: hidden;
+    }
+
+     
+    .grid3_5 {
+        font-size: 2.5rem;
+
+        display: grid;
+        grid-template-columns: 3fr 1fr 3fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 0%;
+        
+        width: 90%;
+        height: 100%;
+    }
+    .container{
+        height: 100%;
+        width: 100%;
+
+    }
+    .groupanim{
+        height: 100vh;
+        position: absolute;
+        z-index: -1;
+        padding-top:50% ;
+        padding-left:2% ;
+        margin-top: 0%;
+        margin-left: 0%;
+        /* border: 1px solid blue; */
+        width: 2000px;
+        height: 1800px;
+        transform: scale(1.9);
+
+    }
+    .sit1{
+        grid-column: 3;
+        grid-row: 1;
+        width: 80%;
+        padding:10%;
+        padding-top:40%;
+    }
+    .sit2{
+        grid-column: 1;
+        grid-row: 1;
+        width: 60%;
+        padding-left: 2%;
+        padding-top: 70%;
+    }
+    .sit3{
+        grid-column: 3;
+        grid-row: 2;
+        width: 40%;
+        padding-left: 50%;
+        padding-top: 20%;
+    }
+    .sit4{
+        grid-column: 1;
+        grid-row: 3;
+        width: 70%;
+        padding-left: 20%;
+        padding-top: 60%;
+    }
+
+    
+
+}
+@media (min-width: 3840px), (height: 2160px){
+
+    .grid3_5 {
+        font-size: 2.5rem;
+    }
+    body {
+        width: 3840px;
+        height: 2160px;
+        overflow: hidden;
+    }
+    .animation {
+        padding-left: 25%;
+    }
+}
