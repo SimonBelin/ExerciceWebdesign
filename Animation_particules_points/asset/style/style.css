@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background: #111;
+    overflow: hidden;
+}
+.glowing{
+    position: relative;
+    min-width: 750px;
+    height: 750px;
+    margin: -100px;
+    transform-origin: right;
+    animation: changementcouleur 15s linear infinite;
+}
+.glowing:nth-child(even){
+    transform-origin: left;
+}
+@keyframes changementcouleur{
+    0%{
+        filter: hue-rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+        transform: rotate(360deg);
+
+    }
+}
+.glowing span{
+    position: absolute;
+    top: calc(80px * var(--i));
+    left: calc(80px * var(--i));
+    bottom: calc(80px * var(--i));
+    right: calc(80px * var(--i));
+}
+.glowing span::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -8px;
+    width: 15px;
+    height: 15px;
+    background: #F00;
+    border-radius: 50%;
+}
+.glowing span:nth-child(3n +1)::before{
+    background: rgba(200,255,0,1);
+    box-shadow: 0 0 20px rgba(200,255,0,1),
+            0 0 40px rgba(200,255,0,1),
+            0 0 60px rgba(200,255,0,1),
+            0 0 80px rgba(200,255,0,1),
+            0 0 100px rgba(200,255,0,1);
+}
+.glowing span:nth-child(3n +2)::before{
+    background: rgba(255,200,0,1);
+    box-shadow: 0 0 20px rgba(255,200,100,1),
+            0 0 40px rgba(255,200,100,1),
+            0 0 60px rgba(255,200,0,1),
+            0 0 80px rgba(255,200,0,1),
+            0 0 100px rgba(255,200,0,1);
+}
+.glowing span:nth-child(3n +3)::before{
+    background: rgba(250,14,12,1);
+    box-shadow: 0 0 20px rgba(250,14,12,1),
+            0 0 40px rgba(250,14,12,1),
+            0 0 60px rgba(250,14,12,1),
+            0 0 80px rgba(250,14,12,1),
+            0 0 100px rgba(250,14,12,1);
+}
+.glowing span:nth-child(3n + 1){
+    animation: animate 10s alternate infinite;
+}
+.glowing span:nth-child(3n + 2){
+    animation: animate-reverse 3s alternate infinite;
+}
+.glowing span:nth-child(3n + 3){
+    animation: animate-reverse 8s alternate infinite;
+}
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes animate-reverse{
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+
+/* hd vertical */
+@media (max-width:1080px) {
+
+}
+/* Uhd vertical */
+@media (min-height: 3840px) {
+
+}
+/* Uhd horizontal */
+@media (min-width: 3840px){
+
+}
