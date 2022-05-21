@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+body{
+    margin: 0%;
+    font-family: open sans;
+    overflow: hidden;
+}
+.banner1, .banner2, .banner3,.banner4 {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+img{
+    width: 120%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    animation: zoom-out 5s linear infinite;
+}
+@keyframes zoom-out{
+    100%{
+        width: 100%;
+    }
+}
+.text-box{
+    width: 70%;
+    position: absolute;
+    top: 45%;
+    left: 5%;
+    color: white;
+
+    animation: textup 20s linear infinite;
+    transform: translateY(100px);
+}
+@keyframes textup{
+
+100%{
+    transform: translateY(0px);
+}
+
+}
+.text-box h1{
+   margin-bottom: 2%;
+   font-size: 4rem;
+}
+.text-box p{
+    margin-top: 4%;
+    font-size: 2.4rem;
+ }
+.text-box span{
+    background-color: violet;
+    height: 2px;
+    width: 8%;
+    position: absolute;
+    left: 0;
+}
+.banner1{
+    animation: slide1 20s linear infinite;
+}
+.banner2{
+    animation: slide2 20s linear infinite;
+}
+.banner3{
+    animation: slide3 20s linear infinite;
+}
+.banner4{
+    animation: slide4 20s linear infinite;
+}
+@keyframes slide1{
+
+        0%{
+            visibility: visible;
+        }
+        25%{
+            visibility: visible;
+        }
+        50%{
+            visibility: hidden;
+        }
+        75%{
+            visibility: hidden;
+        }
+        100%{
+            visibility: visible;
+        }
+}
+@keyframes slide2{
+
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: visible;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+@keyframes slide3{
+
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: visible;
+    }
+    100%{
+        visibility: hidden;
+    }
+}
+@keyframes slide4{
+
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    }
+    100%{
+        visibility: visible;
+    }
+}
+.text-box1{
+    animation-delay: 0s;
+}
+.text-box2{
+    animation-delay: 5s;
+}
+.text-box3{
+    animation-delay: 10s;
+}
+.text-box4{
+    animation-delay: 15s;
+}
+/* hd vertical */
+@media (max-width:1080px) {
+    .banner1, .banner2, .banner3,.banner4 {
+        height: 100vh;
+        width: 270%;
+    }
+    .text-box{
+        width: 25%;
+    }
+}
+/* Uhd vertical */
+@media (min-height: 3840px) {
+    .banner1, .banner2, .banner3,.banner4 {
+        height: 100vh;
+        width: 270%;
+    }
+    .text-box{
+        width: 25%;
+    }
+    .text-box p{
+        font-size: 4rem;
+     }
+     .text-box h1{
+        font-size: 6rem;
+     }
+
+}
+/* Uhd horizontal */
+ @media (min-width: 3840px){
+    .text-box p{
+        font-size: 3.8rem;
+     }
+     .text-box h1{
+        font-size: 6rem;
+     }
+} 
