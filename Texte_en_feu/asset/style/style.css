@@ -1,0 +1,52 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@700&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    /* font-family: 'Bebas Neue', cursive; */
+    font-family: 'Cabin', sans-serif;
+    box-sizing: border-box; 
+    font-size: 3rem;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #0e0e0e;
+}
+.text{
+    position: relative;
+    width: 100vw;
+    text-align: center;
+    filter: url(#cabrule);
+}
+.text h2{
+    position: relative;
+    color: #f4d71f;
+    font-weight: 600;
+    -webkit-box-reflect: below -60px linear-gradient(transparent,#0008);
+    text-shadow: 0 0 10px #f4b01f,
+     0 0 40px #f4a11f,
+     0 0 80px #f4921f,
+     0 0 160px #f4831f,
+     0 0 240px #f4651f;
+}
+svg{
+    width: 0;
+    height: 0;
+}
+
+/* hd vertical */
+@media (max-width:1080px) {
+
+}
+/* Uhd vertical */
+@media (min-height: 3840px) {
+
+}
+/* Uhd horizontal */
+@media (min-width: 3840px){
+
+}
