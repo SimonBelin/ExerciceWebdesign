@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: open sans;
+    box-sizing: border-box; 
+    font-size: 2rem;
+    /* background: black; */
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.container .column {
+    width: 25%;
+    height: 100%;
+    float: left;
+    border-right: 2px solid rgba(0, 0, 0, .5);
+    box-sizing: border-box;
+    z-index: 1;
+}
+.container .column:last-child{
+    border-right: none;
+}
+.container .column .content{
+    position: relative;
+    height: 100%;
+}
+.container .column .content h1{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    box-sizing: border-box;
+    padding: 40px;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 1;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: rgba(255, 255, 255, .2);
+    background: rgba(0, 0, 0, .2);
+    font-size: 14em;
+    width: 100%;
+    border-top: 2px solid rgba(0, 0, 0, .5);
+    border-bottom: 2px solid rgba(0, 0, 0, .5);
+}
+
+.container .column .content .box{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    box-sizing: border-box;
+    padding: 40px;
+    background: rgba(255, 255, 255, 1);
+    text-align: center;
+    transition: 0.5s;
+    opacity: 0; 
+}
+
+.container .column .content1 .box{
+     animation: box1 20s ease infinite;
+}
+@keyframes box1{
+    0%{
+        top: 100%;
+        opacity: 0; 
+    }
+    2%{
+        top: 50%;
+        opacity: 1; 
+    }
+    23%{
+        top: 50%;
+        opacity: 1; 
+    }
+    25%{
+        top: 100%;
+        opacity: 0; 
+    }
+    100%{
+        top: 100%;
+        opacity: 0; 
+    }
+}
+.container .column .content2 .box{
+    animation: box1 20s ease infinite;
+    animation-delay: 5s;
+}
+.container .column .content3 .box{
+    animation: box1 20s ease infinite;
+    animation-delay: 10s;
+}
+.container .column .content4 .box{
+    animation: box1 20s ease infinite;
+    animation-delay: 15s;
+}
+
+
+
+
+.container .column .content .box h2{
+    margin: 0;
+    padding: 0;
+    /* font-size: 60px; */
+    color: #262626;
+}
+.container .column .content .box p{
+    /* font-size: 18px; */
+    color: #262626;
+}
+.container .column .bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+
+}
+.container .column .bg.bg1{
+    background: url(/Image+textsuperpose/asset/image/boat-g6761e8429_1920.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    transition: 0.5s;
+
+    animation: box2 20s ease infinite;
+}
+.container .column .bg.bg2{
+    background: url(/Image+textsuperpose/asset/image/boats-ga7ca9dfc2_1920.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    transition: 0.5s;
+
+    animation: box2 20s ease infinite;
+    animation-delay: 5s;
+}
+.container .column .bg.bg3{
+    background: url(/Image+textsuperpose/asset/image/building-g0a21ff926_1920.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    transition: 0.5s;
+
+    animation: box2 20s ease infinite;
+    animation-delay: 10s;
+}
+.container .column .bg.bg4{
+    background: url(/Image+textsuperpose/asset/image/water-gfea40a68f_1920.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    transition: 0.5s;
+
+    animation: box2 20s ease infinite;
+    animation-delay: 15s;
+}
+@keyframes box2{
+    0%{
+        opacity: 0;
+    }
+    2%{
+        opacity: 1;
+    }
+    25%{
+        opacity: 1;
+    }
+    27%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+
+/* hd vertical */
+@media (max-width:1080px) {
+
+}
+/* Uhd vertical */
+@media (min-height: 3840px) {
+
+}
+/* Uhd horizontal */
+@media (min-width: 3840px){
+
+}
