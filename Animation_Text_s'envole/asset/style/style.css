@@ -1,0 +1,83 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Outfit:wght@800&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box; 
+    font-size: 2rem;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+}
+h2{
+    position: relative;
+    margin: 0;
+    color: #fff;
+    z-index: 1;
+    overflow: hidden;
+}
+h2::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 120%;
+    height: 100%;
+    background: linear-gradient(90deg,transparent 0%, #000 5%, #000 100%);
+    animation: texte 5.5s linear forwards;
+}
+@keyframes texte {
+    0%{
+        left: 110%;
+    }
+    100%{
+        left: -20%;
+    }
+    
+}
+video {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    z-index: 2;
+    pointer-events: none;
+    mix-blend-mode: screen;
+    animation: opacity 5.5s linear forwards; 
+}
+@keyframes opacity {
+    0%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+    
+}
+h2 span{
+    color: #ff1493;
+}
+
+/* hd vertical */
+@media (max-width:1080px) {
+
+}
+/* Uhd vertical */
+@media (min-height: 3840px) {
+
+}
+/* Uhd horizontal */
+@media (min-width: 3840px){
+
+}
